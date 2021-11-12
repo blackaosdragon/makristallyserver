@@ -10,6 +10,7 @@ app.listen(port, () =>{
 
 app.get('/', (req,res) => {
     console.log("Usuario conectado");
-    res.send("Hola mundo")
+    //res.send("Hola mundo")
 })
+app.use('/',express.static(__dirname+'/page'))
 
