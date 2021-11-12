@@ -8,9 +8,10 @@ app.listen(port, () =>{
     console.log(`Servidor levantado en el puerto ${port}`)
 })
 
-app.get('/', (req,res) => {
-    console.log("Usuario conectado");
-    //res.send("Hola mundo")
-})
-app.use('/',express.static(__dirname+'./page'))
+// app.get('/', (req,res) => {
+//     console.log("Usuario conectado");
+//     res.send("Hola mundo")
+// })
+// app.get('/',express.static(__dirname+'/page'))
+app.use('/',express.static(__dirname+'/page'))
 
